@@ -1,8 +1,12 @@
 import React from 'react';
 
+import DisplayBody from './DisplayBody';
+
 function IndexRoute() {
 	return (
-		<div>IndexRoute</div>
+		<div>
+			<DisplayBody />
+		</div>
 	);
 }
 
