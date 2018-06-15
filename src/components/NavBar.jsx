@@ -9,7 +9,7 @@ export default class NavBar extends Component {
 				<NavButton
 					key={val}
 					label={val}
-					path={`/${val.toLowerCase()}`}
+					path={`/${val === 'Home' ? '' : val.toLowerCase()}`}
 				/>
 			);
 		});

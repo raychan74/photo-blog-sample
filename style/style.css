@@ -54,6 +54,38 @@ div {
 	background: #d8d8d8;
 }
 
+.landing-page {
+	background: url('../assets/images/1.jpg');
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	opacity: 0.95;
+}
+
+.landing-page-title {
+	color: lightskyblue;
+	cursor: pointer;
+	font-family: Arial;
+	font-size: 80px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.landing-page-title:hover {
+	background: rgba(0, 0, 0, 0.25);
+	color: lightskyblue;
+	text-decoration: none;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+.landing-page-title:active {
+	padding-top: 5px;
+	padding-bottom: 0px;
+}
+
 .navbar-list {
 	display: flex;
 	justify-content: flex-end;
@@ -64,4 +96,10 @@ div {
 .navbar-item {
 	font-size: 18px;
 	padding: 10px 20px;
+}
+
+.route-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
