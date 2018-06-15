@@ -9,18 +9,18 @@ export default class NavBar extends Component {
 				<NavButton
 					key={val}
 					label={val}
-					path={val.toLowerCase()}
+					path={`/${val.toLowerCase()}`}
 				/>
 			);
 		});
 	}
 
 	render() {
-		const buttonName = ['Home', 'Blogs', 'Photos', 'About', 'Contact'];
+		const buttonName = ['Home', 'Blogs', 'Photos', 'About', 'Contact', 'page/1'];
 
 		return (
 			<nav>
-				<ul>
+				<ul className='navbar-list'>
 					{this.renderNavButton(buttonName)}
 				</ul>
 			</nav>

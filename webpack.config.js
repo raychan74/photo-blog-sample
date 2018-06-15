@@ -4,11 +4,12 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		path: __dirname,
+		publicPath: '/',
 		filename: 'bundle.js'
 	},
 	mode: 'development',
 	devServer: {
-		contentBase: './'
+		historyApiFallback: true
 	},
 	resolve: {
 		extensions: ['*', '.js', '.jsx']

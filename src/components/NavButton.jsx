@@ -10,7 +10,7 @@ NavButton.propTypes = {
 function NavButton({ path, label }) {
 	return (
 		<li>
-			<Link to={path}>{label}</Link>
+			<Link className='navbar-item' to={path}>{label}</Link>
 		</li>
 	);
 }

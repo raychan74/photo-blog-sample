@@ -12,7 +12,7 @@ const App = () => {
 				<div>
 					<Route path='/' component={NavBar} />
 					<Switch>
-						<Route path='/' component={IndexRoute} />
+						<Route path='/page/:activePage' component={IndexRoute} />
 					</Switch>
 				</div>
 			</BrowserRouter>
